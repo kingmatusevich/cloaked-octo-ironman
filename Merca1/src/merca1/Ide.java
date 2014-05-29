@@ -4,6 +4,7 @@
  */
 package merca1;
 
+import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -15,13 +16,15 @@ import javax.swing.JTextField;
 public class Ide extends JFrame{
     JTextField txtNumbers = new JTextField();
     JPanel field0= new JPanel();
+    Font font1 = new Font("helvetica", 1, 20);
     public Ide(){
         super("Simple Calculator");
-        setSize(600,400);
-        
-        field0.add(txtNumbers);
-        field0.setSize(200, 400);
-        add(field0);
+        setSize(250,300);
+        setLayout(null);
+        txtNumbers.setBounds(0, 0,235,50);
+        txtNumbers.setHorizontalAlignment(JTextField.RIGHT);
+        txtNumbers.setFont(font1);
+        add(txtNumbers); 
                
         show();
     }

@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 /**
  *
@@ -26,7 +27,7 @@ public class Ide extends JFrame{
     
     public Ide(){
         super("Simple Calculator");
-        setSize(240,300);
+        setSize(240,140);
         setLayout(null);
         
         txtNumbers.setBounds(0, 0,240,50);
@@ -36,17 +37,25 @@ public class Ide extends JFrame{
         
         btnAdd.setBounds(0,50, 60, 60);
         btnAdd.setFont(font2);
+        btnAdd.setHorizontalAlignment(SwingConstants.CENTER);
+        btnAdd.setVerticalAlignment(SwingConstants.CENTER);
         add(btnAdd);
         btnSustract.setBounds(60,50, 60, 60);
         btnSustract.setFont(font2);
+        btnSustract.setHorizontalAlignment(SwingConstants.CENTER);
+        btnSustract.setVerticalAlignment(SwingConstants.CENTER);
         add(btnSustract);
         btnMultiply.setBounds(120,50, 60, 60);
         btnMultiply.setFont(font2);
+        btnMultiply.setHorizontalAlignment(SwingConstants.CENTER);
+        btnMultiply.setVerticalAlignment(SwingConstants.CENTER);
         add(btnMultiply);
         btnDivide.setBounds(180,50, 60, 60);
         btnDivide.setFont(font2);
+        btnDivide.setHorizontalAlignment(SwingConstants.CENTER);
+        btnDivide.setVerticalAlignment(SwingConstants.CENTER);
         add(btnDivide);
-        
+        setResizable(false);
         show();
     }
 }

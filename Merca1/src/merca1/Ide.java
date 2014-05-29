@@ -29,7 +29,7 @@ public class Ide extends JFrame{
         setSize(240,300);
         setLayout(null);
         
-        txtNumbers.setBounds(0, 0,220,50);
+        txtNumbers.setBounds(0, 0,240,50);
         txtNumbers.setHorizontalAlignment(JTextField.RIGHT);
         txtNumbers.setFont(font1);
         add(txtNumbers); 

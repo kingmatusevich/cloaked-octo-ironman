@@ -24,10 +24,11 @@ public class Ide extends JFrame{
     JButton btnSustract = new JButton("-");
     JButton btnMultiply = new JButton("x");
     JButton btnDivide = new JButton("/");
+    JButton btnEqual= new JButton("=");
     
     public Ide(){
         super("Simple Calculator");
-        setSize(240,140);
+        setSize(240,170);
         setLayout(null);
         
         txtNumbers.setBounds(0, 0,240,50);
@@ -55,6 +56,11 @@ public class Ide extends JFrame{
         btnDivide.setHorizontalAlignment(SwingConstants.CENTER);
         btnDivide.setVerticalAlignment(SwingConstants.CENTER);
         add(btnDivide);
+        btnEqual.setBounds(0,110, 240, 60);
+        btnEqual.setFont(font2);
+        btnEqual.setHorizontalAlignment(SwingConstants.CENTER);
+        btnEqual.setVerticalAlignment(SwingConstants.CENTER);
+        add(btnEqual);
         setResizable(false);
         show();
     }

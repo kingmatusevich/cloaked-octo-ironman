@@ -55,4 +55,11 @@ public class CalculadoraTest {
         Calculadora c = new Calculadora();
         assertEquals(c.division(1, 0), Double.POSITIVE_INFINITY, 0);
     }
+    
+    @Test
+    public void testMultiplication()
+    {
+        Calculadora c = new Calculadora();
+        assertEquals(10, c.multiply(2, 5), 0);
+    }
 }

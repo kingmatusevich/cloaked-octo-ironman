@@ -12,5 +12,21 @@ package merca1;
  * @author javiermatusevich
  */
 public class Calculadora {
+    public double add(double first, double second)
+    {
+        return first+second;
+    }
+    public double substract(double first, double second)
+    {
+        return first-second;
+    }
+    public double multiply(double first, double second)
+    {
+        return first*second;
+    }
+    public double division(double first, double second)
+    {
+        return first/second;
+    }
     
 }

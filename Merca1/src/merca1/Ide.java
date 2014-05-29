@@ -40,6 +40,7 @@ public class Ide extends JFrame{
         txtNumbers.setBounds(0, 0,240,50);
         txtNumbers.setHorizontalAlignment(JTextField.RIGHT);
         txtNumbers.setFont(font1);
+        txtNumbers.addKeyListener(control);
         add(txtNumbers); 
         
         btnAdd.setBounds(0,50, 60, 60);
@@ -58,16 +59,19 @@ public class Ide extends JFrame{
         btnMultiply.setFont(font2);
         btnMultiply.setHorizontalAlignment(SwingConstants.CENTER);
         btnMultiply.setVerticalAlignment(SwingConstants.CENTER);
+        btnMultiply.addActionListener(control);
         add(btnMultiply);
         btnDivide.setBounds(180,50, 60, 60);
         btnDivide.setFont(font2);
         btnDivide.setHorizontalAlignment(SwingConstants.CENTER);
         btnDivide.setVerticalAlignment(SwingConstants.CENTER);
+        btnDivide.addActionListener(control);
         add(btnDivide);
         btnEqual.setBounds(0,110, 240, 60);
         btnEqual.setFont(font2);
         btnEqual.setHorizontalAlignment(SwingConstants.CENTER);
         btnEqual.setVerticalAlignment(SwingConstants.CENTER);
+        btnEqual.addActionListener(control);
         add(btnEqual);
         setResizable(false);
         show();

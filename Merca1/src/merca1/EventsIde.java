@@ -29,7 +29,7 @@ public class EventsIde implements ActionListener, ItemListener, KeyListener{
             case "+": return c.add();
             case "-": return c.substract();
             case "/": return c.division();
-            case "*": return c.multiply();
+            case "x": return c.multiply();
         }
         return 0;
     }
